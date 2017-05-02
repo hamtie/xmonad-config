@@ -31,4 +31,4 @@ gnome-screensaver &
 # Start sound server
 pulseaudio --start --log-target=syslog &
 
-gnome-session &
+#gnome-session &
