@@ -22,6 +22,8 @@ tray &
 gnome-terminal &
 gnome-terminal &
 
+emacs &
+
 # Start a browser
 google-chrome &
 
