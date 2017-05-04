@@ -22,7 +22,14 @@ tray &
 gnome-terminal &
 gnome-terminal &
 
+# Emacs 4 life
 emacs &
+
+# Slack dedack
+slack &
+
+# Music
+spotify &
 
 # Start a browser
 google-chrome &

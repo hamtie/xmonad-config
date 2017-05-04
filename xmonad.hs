@@ -47,7 +47,7 @@ myLauncher = "$(yeganesh -x -- -fn '-*-terminus-*-r-normal-*-*-120-*-*-*-*-iso88
 -- Workspaces
 -- The default number of workspaces (virtual screens) and their names.
 --
-myWorkspaces = ["1:web","2:emacs","3:term", "4:slack", "5:vm"] ++ map show [6..9]
+myWorkspaces = ["1:web","2:emacs","3:term", "4:apps", "5:vm"] ++ map show [6..9]
 
 
 ------------------------------------------------------------------------
@@ -76,7 +76,8 @@ myManageHook = composeAll
     , resource  =? "gpicview"       --> doFloat
     , className =? "MPlayer"        --> doFloat
     , className =? "VirtualBox"     --> doShift "5:vm"
-    , className =? "Slack"          --> doShift "4:slack"
+    , className =? "Slack"          --> doShift "4:apps"
+    , className =? "Spotify"        --> doShift "4:apps"
     , className =? "stalonetray"    --> doIgnore
     , isFullscreen --> (doF W.focusDown <+> doFullFloat)]
 
